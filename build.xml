@@ -75,12 +75,12 @@ Author: Neil Sanchala
     <!-- Java compilation. -->
     <javac srcdir="${java.src.dir}:${build.genfiles.dir}"
            destdir="${build.classes.dir}"
-           source="1.6"
-           target="1.6"
+           source="1.7"
+           target="1.7"
            includeAntRuntime="true"
            debug="${includeDebugInfo}">
       <classpath refid="classpath.path" />
-      <compilerarg value="-Werror"/>  <!-- warnings become errors -->
+      <!--compilerarg value="-Werror"/-->  <!-- warnings become errors -->
       <compilerarg value="-Xlint:deprecation"/>
     </javac>
 
